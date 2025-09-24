@@ -64,11 +64,7 @@ targets:
     scmid: default
     kind: shell
     spec:
-      command: yarn generate-ecs-types -r ${{ source "elastic-ecs" }}
+      command: yarn install --frozen-lockfile && yarn generate-ecs-types -r ${{ source "elastic-ecs" }}
       environments:
       - name: PATH
       - name: HOME
-      - name: NVM_DIR
-      - name: ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
-      - name: AGENT_TOOLSDIRECTORY
-      - name: RUNNER_WORKSPACE
