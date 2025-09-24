@@ -69,3 +69,6 @@ targets:
       - name: PATH
       - name: HOME
       - name: NVM_DIR
+      - name: ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+      - name: AGENT_TOOLSDIRECTORY
+      - name: RUNNER_WORKSPACE
