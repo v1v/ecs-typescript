@@ -60,7 +60,6 @@ targets:
     dependson:
       - 'condition#version-is-not-up-to-date'
     name: 'Update to elastic/ecs@{{ source "elastic-ecs" }}'
-    sourceid: elastic-ecs
     disablesourceinput: true
     scmid: default
     kind: shell
